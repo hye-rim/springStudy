@@ -39,6 +39,8 @@ public class ApplicationContextSameBeanFindTest {
         for (String key : beansOfType.keySet()) {
             System.out.println("key = " + key + " value = " + beansOfType.get(key));
         }
+        System.out.println("beansOfType = " + beansOfType);
+        Assertions.assertEquals(2,beansOfType.size());
     }
 
     @Configuration
